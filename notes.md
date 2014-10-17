@@ -67,6 +67,9 @@ Agenda:
 10. `bower install angular angular-resource angular-route --save`
 11. `app.js` or `server.js`
 12. `npm install nodemon -g`
+13. `npm install stylus --save`
+14. `npm install morgan -g`, express logger
+15. `npm install body-parser`, express body parser
 
 Side notes:
 Webstorm -> inspection -> general -> uncheck
