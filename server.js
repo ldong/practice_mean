@@ -19,9 +19,9 @@ if ('development' == app.get('env')) {
     app.set('view engine', 'jade');
     app.use(morgan('combined'));
     // parse application/x-www-form-urlencoded
-    app.use(bodyParser.urlencoded({ extended: false }))
+    app.use(bodyParser.urlencoded({ extended: false }));
     // parse application/json
-    app.use(bodyParser.json())
+    app.use(bodyParser.json());
 
     app.use(stylus.middleware(
         {
@@ -30,9 +30,12 @@ if ('development' == app.get('env')) {
         }
     ));
     app.use(express.static(__dirname + '/public'));
-}
+};
 
-//app.get('/)
+app.get('/partials/:partialPath', function(req, res){
+    res.render('partials/' + req.params.partialPath);
+});
+
 app.get('*', function(req, res){
     res.render('index');
 });
