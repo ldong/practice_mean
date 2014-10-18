@@ -35,11 +35,11 @@ DB:
 * nodelist/n/nvm
 * git
 
-## Multivision Application
+# Multivision Application
 
 [Demo](http://github.com/joeeames/MEANAppsFiles)
 
-## Walking skeleton
+# Walking skeleton
 * End to end
 * Main architectural components
 * Iterative
@@ -115,4 +115,18 @@ if ('production' == app.get('env')) {
 }
 ```
 
-## 
+## Mongo
+``` bash
+mongod --dbpath data/db
+mongo
+> use multivision
+switched to db multivision
+
+> db.messages.insert({message: 'Hello from mongo'})
+WriteResult({ "nInserted" : 1 })
+
+> show collections
+messages
+system.indexes
+
+```
