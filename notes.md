@@ -32,7 +32,7 @@ DB:
     * Mocha
 * Stylus/CSS
 * Jade (HTML Template)
-* nodlist/n/nvm
+* nodelist/n/nvm
 * git
 
 ## Multivision Application
@@ -70,6 +70,7 @@ Agenda:
 13. `npm install stylus --save`
 14. `npm install morgan -g`, express logger
 15. `npm install body-parser`, express body parser
+16. `npm install mongoose -g`, driver to mongoDB
 
 Side notes:
 Webstorm -> inspection -> general -> uncheck
